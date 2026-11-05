@@ -72,15 +72,19 @@ python -m app.ui.gui
 
 The desktop interface and automation features may request macOS privacy permissions. Grant only the permissions required for the features you use.
 
-## Tests
+## Source bundle
 
-The repository includes a `tests/` directory. Run the available unit tests from the project root:
+The complete application source snapshot is provided as `source-code.tar.xz` in the repository root. After cloning the repository, extract it from the project root:
 
 ```bash
-python -m unittest discover -s tests -v
+tar -xJf source-code.tar.xz
 ```
 
-The presence of tests does not imply that this snapshot has passed on every environment.
+This archive contains the `app/` package and `run.py`. It excludes runtime data, local databases, virtual environments, and test files.
+
+## Tests
+
+Automated test files are not included in this source snapshot. The repository should therefore be treated as a development project rather than a tested release.
 
 ## Configuration and privacy
 
