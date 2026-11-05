@@ -1,0 +1,24 @@
+# Core application and local LLM client
+ollama>=0.6.2
+python-dotenv>=1.2
+
+# Registered web, system, file, and OCR tools
+requests>=2.32
+beautifulsoup4>=4.12
+ddgs>=9.0
+psutil>=6.0
+Pillow>=10.0
+pytesseract>=0.3.13
+
+# Voice recording, transcription, and wake-word components
+numpy>=1.26
+sounddevice>=0.5
+soundfile>=0.12
+faster-whisper>=1.1
+openwakeword>=0.6
+
+# Native macOS integration
+pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"
+
+# Optional API client present in the source tree
+openai>=1.0
